@@ -1,0 +1,45 @@
+import { FC } from 'react';
+import ExternalLink from '../shared-components/ExternalLink';
+import samPicture from '../img/sam.jpeg';
+import { Link } from 'react-router-dom';
+
+const Home: FC = () => {
+    document.title = 'Sam Wolfson';
+    return (
+        <div style={{ display: 'flex' }}>
+            <div>
+                <h1>hi there!</h1>
+                <p>My name is Sam Wolfson.</p>
+                <p>
+                    In summer 2020, I graduated with a master's degree in{' '}
+                    <ExternalLink href="https://www.cs.washington.edu">
+                        computer science
+                    </ExternalLink>{' '}
+                    at the{' '}
+                    <ExternalLink href="http://www.washington.edu">
+                        University of Washington
+                    </ExternalLink>
+                    .
+                </p>
+                <p>Right now I'm living and working in Seattle.</p>
+                <p>
+                    On this site, you may find interesting things about me, an
+                    overview of my{' '}
+                    <Link to="/academics">academic interests</Link>, my various{' '}
+                    <Link to="/projects">projects</Link>, and what I like to do{' '}
+                    <Link to="/hobbies">in my spare time</Link>.
+                </p>
+                <p>
+                    You may also view my{' '}
+                    <a href="/Samuel_Wolfson_Resume.pdf">resume</a>, if you're
+                    into that sort of thing.
+                </p>
+            </div>
+            <div>
+                <img className="home-image" src={samPicture} alt="Sam" />
+            </div>
+        </div>
+    );
+};
+
+export default Home;

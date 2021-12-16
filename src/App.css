@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.container {
+    font-family: 'Readex Pro', sans-serif;
+    max-width: 850px;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.top-link:visited {
+    color: black;
+}
+
+.top-link-small > h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+a,
+a:visited,
+.clickable {
+    text-decoration: none;
+    color: #454545;
+}
+
+a:visited {
+    text-decoration-color: darkgray;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: darkgray;
+    text-underline-offset: 3px;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+.top-link > *:hover,
+.clickable:hover {
+    color: #656565;
+    transition: color 0.3s ease;
+}
+
+.top-link > * {
+    transition: color 0.3s ease;
+}
+
+div.main-content {
+    line-height: 150%;
+}
+
+.list-relaxed > li:not(:last-child) {
+    padding-bottom: 12px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: transform 0.3s ease;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.home-image {
+    border-radius: 5px;
+    margin-top: 24px;
+    margin-left: 12px;
+    height: 400px;
+}
+
+.message {
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 3px solid darkgray;
+    padding: 5px 10px;
+    color: #525252;
+    line-height: 140%;
+}
+
+.bordered-gradient {
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(white, #d6d6d6);
+}
