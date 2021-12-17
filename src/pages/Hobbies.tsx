@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import CollapsingSection from '../shared-components/CollapsingSection';
 import ExternalLink from '../shared-components/ExternalLink';
+import funImage from '../img/fun.jpeg';
 
 const Hobbies: FC = () => (
     <div>
@@ -61,23 +62,33 @@ const Hobbies: FC = () => (
             </p>
         </CollapsingSection>
         <CollapsingSection title="outdoors">
-            <p>
-                I like to hike, and have been on a number of backpacking trips.
-                My{' '}
-                <ExternalLink href="https://www.wta.org/@@backpacks/scrnm-wolfson">
-                    WTA
-                </ExternalLink>{' '}
-                page has a (non-exhaustive) list of place that I've been. Some
-                notable trips are:
-                <ul>
-                    <li>Hidden Lake Lookout (2016, 2019, both overnight)</li>
-                    <li>Marmot Pass (2017, 2 nights)</li>
-                    <li>Spray Park Loop (2018, 3 nights)</li>
-                    <li>Camp Muir from Paradise (2019, day trip)</li>
-                    <li>Spider Gap Loop (2020, 4 nights)</li>
-                    <li>Seven Lakes Basin Loop (2021, 3 nights)</li>
-                </ul>
-            </p>
+            <div className="flex-container-wrapping">
+                <p className="flex-text-left">
+                    I like to hike, and have been on a number of backpacking
+                    trips. My{' '}
+                    <ExternalLink href="https://www.wta.org/@@backpacks/scrnm-wolfson">
+                        WTA
+                    </ExternalLink>{' '}
+                    page has a (non-exhaustive) list of places that I've been.
+                    Some notable trips are:
+                    <ul>
+                        <li>
+                            Hidden Lake Lookout (2016, 2019, both overnight)
+                        </li>
+                        <li>Marmot Pass (2017, 2 nights)</li>
+                        <li>Spray Park Loop (2018, 3 nights)</li>
+                        <li>Camp Muir from Paradise (2019, day trip)</li>
+                        <li>Spider Gap Loop (2020, 4 nights)</li>
+                        <li>Seven Lakes Basin Loop (2021, 3 nights)</li>
+                    </ul>
+                </p>
+                <img
+                    src={funImage}
+                    style={{ height: '250px' }}
+                    className="rounded-image flex-photo-right"
+                    alt="grimacing in the rain while backpacking"
+                />
+            </div>
         </CollapsingSection>
     </div>
 );

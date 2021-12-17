@@ -47,12 +47,16 @@ const Projects: FC = () => (
                         I use a lot of cheap, generic smart outlets that are
                         based around the ESP82666 microprocessor. To avoid
                         privacy issues and improve their compatibility, I take
-                        them apart, solder onto their serial pins and flash whem
+                        them apart, solder onto their serial pins and flash them
                         with{' '}
                         <ExternalLink href="https://tasmota.github.io/docs/">
                             Tasmota
                         </ExternalLink>
-                        , and open-source firmware.
+                        , an open-source firmware. I link these devices up with{' '}
+                        <ExternalLink href="https://www.home-assistant.io/">
+                            Home Assistant
+                        </ExternalLink>{' '}
+                        to create automations and control them via Homekit.
                     </li>
                 </ul>
             </p>
@@ -110,7 +114,7 @@ const Projects: FC = () => (
                 <li>
                     I've{' '}
                     <ExternalLink href="https://github.com/terabyte128/Bookmark">
-                        written
+                        created
                     </ExternalLink>{' '}
                     <ExternalLink href="https://github.com/terabyte128/PlayerStats">
                         a

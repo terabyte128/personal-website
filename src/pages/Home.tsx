@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Home: FC = () => {
     document.title = 'Sam Wolfson';
     return (
-        <div style={{ display: 'flex' }}>
+        <div className="flex-container-wrapping">
             <div>
                 <h1>hi there!</h1>
                 <p>My name is Sam Wolfson.</p>
@@ -31,12 +31,20 @@ const Home: FC = () => {
                 </p>
                 <p>
                     You may also view my{' '}
-                    <a href="/Samuel_Wolfson_Resume.pdf">resume</a>, if you're
-                    into that sort of thing.
+                    <ExternalLink
+                        href={`${process.env.PUBLIC_URL}/Samuel_Wolfson_Resume.pdf`}
+                    >
+                        resume
+                    </ExternalLink>
+                    , if you're into that sort of thing.
                 </p>
             </div>
-            <div>
-                <img className="home-image" src={samPicture} alt="Sam" />
+            <div className="flex-photo-right">
+                <img
+                    className="home-image rounded-image"
+                    src={samPicture}
+                    alt="Sam"
+                />
             </div>
         </div>
     );

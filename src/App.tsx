@@ -48,7 +48,7 @@ function App() {
             <div className="bordered-gradient">
                 <div className="container">
                     <header
-                        className="flex-space-between top-nav"
+                        className="flex-container-wrapping flex-space-between top-nav"
                         style={{ alignItems: 'baseline' }}
                     >
                         <Link to="/" className="clickable top-link">
@@ -92,7 +92,9 @@ interface PageWithTitleProps {
 }
 
 const PageWithTitle: FC<PageWithTitleProps> = props => {
-    document.title = `${props.title} | Sam Wolfson`;
+    document.title = `${
+        props.title.charAt(0).toUpperCase() + props.title.slice(1)
+    } | Sam Wolfson`;
     return (
         <>
             <h1>{props.title}</h1>
