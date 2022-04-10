@@ -21,7 +21,14 @@ const Home: FC = () => {
                     </ExternalLink>
                     .
                 </p>
-                <p>Right now I'm living and working in Seattle.</p>
+                <p>
+                    I currently live and work in Seattle. I'm a software
+                    engineer at{' '}
+                    <ExternalLink href="https://www.extrahop.com">
+                        ExtraHop
+                    </ExternalLink>
+                    , designing and building cloud software and infrastructure.
+                </p>
                 <p>
                     On this site, you may find interesting things about me, an
                     overview of my{' '}

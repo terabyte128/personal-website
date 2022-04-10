@@ -50,6 +50,26 @@ const Hobbies: FC = () => (
                 half-marathon. I was pretty sore the next day.
             </p>
         </CollapsingSection>
+        <CollapsingSection title="kombucha">
+            <i>oh no, I'm becoming a stereotype!</i>
+            <p>
+                I started brewing kombucha in early 2022 after getting a little
+                bored of sourdough. My favorite flavor right now is lemon,
+                ginger, and mixed berries. I also recently tried making{' '}
+                <a href="https://brewbuch.com/how-to-make-hard-kombucha/">
+                    hard kombucha
+                </a>
+                , which actually worked pretty well!
+            </p>
+        </CollapsingSection>
+        <CollapsingSection title="knitting">
+            <p>
+                I recently started knitting, originally as a way to keep myself
+                from getting too distracted during work meetings. I'm a pretty
+                fidgety person so it's a great way to keep my hands busy. I'm
+                currently making a scarf!
+            </p>
+        </CollapsingSection>
         <CollapsingSection title="music">
             <p>
                 I've been playing the guitar since middle school, though I've
