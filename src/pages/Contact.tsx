@@ -4,7 +4,7 @@ import ExternalLink from '../shared-components/ExternalLink';
 const Contact: FC = () => (
     <>
         <p>
-            You can email me at: wolfson[at]cs.washington.edu.
+            You can email me at: me[at]samwolfson.com.
             <br />
             I'm on GitHub as{' '}
             <ExternalLink href="http://github.com/terabyte128/">
