@@ -100,6 +100,10 @@ const Hobbies: FC = () => (
                         <li>Camp Muir from Paradise (2019, day trip)</li>
                         <li>Spider Gap Loop (2020, 4 nights)</li>
                         <li>Seven Lakes Basin Loop (2021, 3 nights)</li>
+                        <li>
+                            Tour de Mont Blanc (2022, 11 nights, mostly in
+                            refuges)
+                        </li>
                     </ul>
                 </p>
                 <img
