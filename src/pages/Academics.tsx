@@ -81,6 +81,11 @@ const Academics: FC = () => (
                     weeks online due to COVID)
                 </ExternalLink>
             </li>
+            <li>
+                <ExternalLink href="https://courses.cs.washington.edu/courses/cse351/23wi/">
+                    The Hardware/Software Interface, Winter 2023
+                </ExternalLink>
+            </li>
         </ul>
         <p>
             I was mentored by{' '}
