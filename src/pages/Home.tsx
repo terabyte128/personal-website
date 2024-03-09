@@ -39,12 +39,8 @@ const Home: FC = () => {
                 <p>I also teach computer science at UW part-time.</p>
                 <p>
                     You may also view my{' '}
-                    <ExternalLink
-                        href={`${process.env.PUBLIC_URL}/Samuel_Wolfson_Resume.pdf`}
-                    >
-                        resume
-                    </ExternalLink>
-                    , if you're into that sort of thing.
+                    <ExternalLink href="/resume.html">resume</ExternalLink>, if
+                    you're into that sort of thing.
                 </p>
             </div>
             <div className="flex-photo-right">
