@@ -270,7 +270,7 @@ const Projects: FC = () => (
                 electrical systems. You can learn much, much more about this
                 project where I've archived it{' '}
                 <ExternalLink
-                    href="http://samwolfson.com/myelectricgokart-archive"
+                    href="http://samwolfson.com/myelectricgokart-archive/index.html"
                     target="_blank"
                 >
                     here
