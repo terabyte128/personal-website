@@ -1,0 +1,162 @@
+/*
+Theme Name:        PressCut Theme 
+Theme URI:         http://www.isulongseophil.com/themes/
+Description:      A fresh, clean, XHTML and CSS validated theme for WordPress by <a href="http://www.isulongseophil.com">Gio</a> based on <a href="http://cutline.tubetorial.com">Cutline Theme</a> originally designed and coded by <a href="http://pearsonified.com">Chris Pearson</a>.
+Version:        1.0
+Author:          Gio
+Author URI:        http://www.isulongseophil.com
+*/
+
+.img_border { border: #CCCCCC 1px; }
+
+body { color: #333; background: #F5F5F5 url('bgd.gif') repeat-y scroll  50% 0; font: 62.5% Georgia, "Times New Roman", Times, serif; text-align: center; }
+
+* { padding: 0; margin: 0; }
+/*---:[ global elements ]:---*/
+
+a { color: #3888B4; background-color: #ffffff; text-decoration: underline; }
+
+  a:visited { color: #9FCAE1; background-color: #ffffff; text-decoration: underline;}
+
+  a:hover { color: #8DC919; background-color: #ffffff; text-decoration: underline; }
+  
+  a img { border: none; }
+  
+blockquote { font-style: italic; font-family: Georgia, "Times New Roman", Times, serif; color: #555; background-color: #ffffff; margin: 0 30px 1.5em 30px; padding: 0 0 0 10px; border-left: 1px solid #aaa; }
+
+/*---:[ headlines ]:---*/
+
+h1, h2, h3 { font-weight: bold; font-family: Helvetica, Arial, sans-serif; }
+
+h1 { font-size: 36px; letter-spacing: -0.03em; }
+
+* html h1 { letter-spacing: -0.1em; }
+
+  #masthead h1 { padding: 0.4em 0; border-top: 1px solid #ccc; text-align: center; clear: both; }
+  
+  h1 a { color: #3888B4; background-color: #ffffff; text-decoration: none; }
+  h1 a:visited { color: #3888B4; background-color: #ffffff; text-decoration: none; }
+  h1 a:hover { color: #8DC919; background-color: #ffffff; text-decoration: none; }
+  
+h2 { font-size: 20px; margin: 10px 0; color: #8DC919; background-color: #ffffff; }
+
+  h2 a { text-decoration: none; color: #8DC919; background-color: #ffffff; }
+  
+  h2 a:visited { text-decoration: none; color: #8DC919; background-color: #ffffff; }
+  
+  h2 a:hover { text-decoration: none; color: #3888B4; background-color: #ffffff; }
+  
+  .posts h2 { margin: 0 0 0.1em 0; line-height: 1.2em; }
+  
+  .pages h2, h2.page_header { margin: 0 0 0.75em 0; padding: 0 0 0.6em 0; background: url('hr_title_sep.gif') 0 100% no-repeat; }
+  
+  h2.archive_head { font-weight: bold !important; font-size: 1.4em !important; text-transform: uppercase !important; letter-spacing: normal !important; margin: 0 0 1.8em 0 !important; padding: 0.4em 2px !important; border-top: 3px solid #000 !important; background: url('hr_dot_black.gif') 0 100% repeat-x !important; }
+  
+h3 { font-size: 1.0em; text-transform: uppercase; }
+
+  .entry h3 { margin: 2.5em 0 0.5em 0; }
+  
+  .entry h3.top { margin: 1.5em 0 0.5em 0 !important; }
+  
+  h3.comments_headers { font-size: 1.4em; }
+
+h4 { font: 1.1em Georgia, "Times New Roman", Times, serif; color: #B0B0B0; background-color: #ffffff; }
+
+  h4 a, h4 a:visited { color: #333; background-color: #ffffff; text-decoration: none; }
+  
+  h4 a:hover { color: #8DC919; background-color: #ffffff; text-decoration: underline; }
+  
+  .posts h4 { margin: 0 0 1.25em 0; padding: 0 0 1.0em 0; background: url('hr_title_sep.gif') 0 100% no-repeat; }
+  
+  .pages h4 { font-size: 1.2em; line-height: 1.6em; margin: 0 0 4.0em 0; padding: 0.4em 0 0 0; background: url('hr_tag_sep.gif') no-repeat; clear: both; }
+  
+
+
+/*---:[ core layout elements ]:---*/
+
+#container { width: 770px; margin: 0 auto; padding-top: 15px;}
+          
+  #content_box { width: 770px; text-align: left; float: left; clear: both; line-height:1.5;}
+  
+    #content { width: 500px; padding: 0 40px 0 0; float: left; }
+    
+    * html #content { overflow: hidden; }
+    
+    #sidebar { width: 230px; float: left; }
+    
+    * html #sidebar { overflow: hidden; }
+    
+  #footer { width: 770px; margin-top: 20px; padding: 1.0em 0; border-top: 2px solid #ccc; font: 12px  Helvetica, Arial, sans-serif;  float: left; clear: both; }
+    
+
+
+/*---:[ header styles ]:---*/
+
+#masthead { width: 770px; line-height:1.5;}
+
+  /* #masthead a { display: block; width: 770px; height: 100px; } */ /* uncomment this line if you use a graphic in the header - make sure the height of your header graphic is equal to the height declared in this line of code! */
+
+#header_img {
+  background: #fff url(%%HEADERIMG%%) no-repeat 0 0;
+  height: 140px;
+  width: 770px;
+}
+
+#nav_h ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: inline;
+  } 
+
+#nav_h ul li {
+  margin-left: 0;
+  padding-right: 0;
+  list-style: none;
+  display: inline;
+  }
+    
+#nav_h ul li.first {
+  margin-left: 0;
+  border-left: none;
+  list-style: none;
+  display: inline;
+  }
+  
+ul#nav { list-style: none; width: 750px; padding: 0 10px; background: url('hr_dot_black.gif') repeat-x; border-bottom: 3px solid #000; float: left; clear: both; }
+
+  ul#nav li { padding: 0.85em 40px 0.7em 0; font: bold 1.4em Helvetica, Arial, sans-serif; text-transform: uppercase; float: left; }
+  
+    ul#nav li a, ul#nav li a:visited { color: #838383; background-color: #ffffff; text-decoration: none; }
+  
+    ul#nav li a:hover { color: #8DC919; background-color: #ffffff; text-decoration: none; }
+    
+    ul#nav li a.current, ul#nav li a.current:visited, ul#nav li a.current:hover { color: #8DC919; background-color: #ffffff; text-decoration: none; }
+    
+  ul#nav li.rss { padding: 0.85em 0 0.7em 0; float: right; }
+      
+    ul#nav li.rss a { padding: 0 18px 0 0; background: url('icon_rss.gif') 100% 50% no-repeat; }
+      
+#header_img { margin: 0 0 3.0em 0; border-bottom: 1px solid #000; float: left; clear: both; }
+
+  #header_img img { display: block; } /* this is really just an IE 6 and 7 hack in disguise */
+/*---:[ content styles ]:---*/
+#content_box { font-size: 14px; line-height:1.5;}
+
+#content_box p { font-size: 14px; line-height:1.5;}
+    
+  
+
+.navigation { width: 500px; margin: 0 0 3.0em 0; font-size: 1.4em; float: left; }
+
+* html .navigation { margin: 0 0 2.5em 0; }
+  
+  .previous { padding: 0 20px 0 0; float: left; }
+  
+  .next { float: right; }
+  
+.clear { width: 500px; height: 1px; clear: both; }
+
+/*---:[ footer styles ]:---*/
+
+#footer a, #footer a:visited, #footer a:hover { color: #333; background-color:#FFFFFF; text-decoration: none; border-bottom: dotted 1px #666666; }
+
