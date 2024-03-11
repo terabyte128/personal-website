@@ -13,7 +13,7 @@ const Contact: FC = () => (
             .
             <br />
             Oh, and I guess I'm also on{' '}
-            <ExternalLink href="https://www.linkedin.com/in/samuel-wolfson-91721b133/">
+            <ExternalLink href="https://www.linkedin.com/in/sam-wolfson-91721b133/">
                 LinkedIn
             </ExternalLink>
             , though I don't check it often.
