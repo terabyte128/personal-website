@@ -18,7 +18,14 @@ const CollapsingSection: FC<CollapsingSectionProps> = props => {
                     <i className="arrow down" />
                 )}
             </h2>
-            <div>{!isCollapsed && props.children}</div>
+            <div
+                className="collapsible-section"
+                style={{
+                    display: isCollapsed ? 'none' : 'block',
+                }}
+            >
+                {props.children}
+            </div>
         </div>
     );
 };

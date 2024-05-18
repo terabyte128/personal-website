@@ -13,16 +13,15 @@ const Hobbies: FC = () => (
         <CollapsingSection title="sourdough breadmaking">
             <p>
                 I studied abroad in Rome in autumn 2018, and got really into
-                baking sourdough bread. I even{' '}
-                <ExternalLink href="http://breadcrumbs.samwolfson.com">
-                    wrote a blog about it!
-                </ExternalLink>{' '}
-                I love the “magic” of the yeast in the starter creating gas
-                bubbles in the gluten that allow the bread to rise and become
-                soft and airy. The whole process is a crazy coincidence of
-                trapping the byproducts of a couple microorganisms into a
-                material that just so happens to have the right amount of
-                elasticity to flex while still being strong enough not to break.
+                baking sourdough bread. I love the “magic” of the yeast in the
+                starter creating gas bubbles in the gluten that allow the bread
+                to rise and become soft and airy. The whole process is a crazy
+                coincidence of trapping the byproducts of a couple
+                microorganisms into a material that just so happens to have the
+                right amount of elasticity to flex while still being strong
+                enough not to break. If you're interested in more of my thoughts
+                on sourdough, I wrote an{' '}
+                <a href="/sourdough"> entire page about it</a>.
             </p>
         </CollapsingSection>
         <CollapsingSection title="running">

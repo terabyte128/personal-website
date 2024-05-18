@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
 import Random from './pages/Random';
+import { Bread } from './pages/Bread';
 
 interface Page {
     title: string;
@@ -31,12 +32,17 @@ const pages: readonly Page[] = [
         content: <Hobbies />,
     },
     {
-        title: 'random',
+        title: 'sourdough',
+        href: '/sourdough',
+        content: <Bread />,
+    },
+    {
+        title: 'etc',
         href: '/random',
         content: <Random />,
     },
     {
-        title: 'contact me',
+        title: 'contact',
         href: '/contact',
         content: <Contact />,
     },
