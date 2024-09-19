@@ -8,11 +8,13 @@ import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
 import Random from './pages/Random';
 import { Bread } from './pages/Bread';
+import { Privacy } from './pages/Privacy';
 
 interface Page {
     title: string;
     href: string;
     content: ReactNode;
+    visible?: boolean;
 }
 
 const pages: readonly Page[] = [
@@ -46,6 +48,11 @@ const pages: readonly Page[] = [
         href: '/contact',
         content: <Contact />,
     },
+    {
+        title: 'Privacy Policy',
+        href: '/privacy',
+        content: <Privacy />,
+    },
 ] as const;
 
 function App() {
@@ -60,15 +67,17 @@ function App() {
                         <Link to="/" className="clickable top-link">
                             <h1>Sam Wolfson</h1>
                         </Link>
-                        {pages.map(({ title, href }) => (
-                            <Link
-                                to={href}
-                                className="clickable top-link top-link-small"
-                                key={title}
-                            >
-                                <h2>{title}</h2>
-                            </Link>
-                        ))}
+                        {pages
+                            .filter(p => p.visible)
+                            .map(({ title, href }) => (
+                                <Link
+                                    to={href}
+                                    className="clickable top-link top-link-small"
+                                    key={title}
+                                >
+                                    <h2>{title}</h2>
+                                </Link>
+                            ))}
                     </header>
                 </div>
             </div>
