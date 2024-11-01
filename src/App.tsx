@@ -52,6 +52,7 @@ const pages: readonly Page[] = [
         title: 'Privacy Policy',
         href: '/privacy',
         content: <Privacy />,
+        visible: false,
     },
 ] as const;
 
@@ -68,7 +69,7 @@ function App() {
                             <h1>Sam Wolfson</h1>
                         </Link>
                         {pages
-                            .filter(p => p.visible)
+                            .filter(p => (p.visible === false ? false : true))
                             .map(({ title, href }) => (
                                 <Link
                                     to={href}
