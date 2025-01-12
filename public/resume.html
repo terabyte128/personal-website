@@ -1,199 +1,205 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sam Wolfson Resume</title>
-        <link rel="stylesheet" href="resume.css" />
-    </head>
 
-    <body>
-        <div class="container">
-            <div class="flex-horizontal">
-                <p class="title">Sam Wolfson</p>
-                <div style="position: absolute; right: 16px">
-                    <ul class="unstyled-list">
-                        <li style="float: right">
-                            <a href="mailto:me@samwolfson.com">{me@}</a
-                            ><a href="https://samwolfson.com">samwolfson.com</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/terabyte128"
-                                >github.com/terabyte128</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <p class="section-header">Education</p>
-                <p class="mini-header">
-                    University of Washington (Seattle, WA)
-                </p>
-                <ul>
-                    <li>
-                        <div class="flex-horizontal">
-                            <span
-                                >Masters of Science, Computer Science (3.9
-                                GPA)</span
-                            >
-                            <span><i>August 2020</i></span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex-horizontal">
-                            <span
-                                >Bachelors of Science, Computer Science (Manga
-                                Cum Laude, 3.9 GPA)</span
-                            >
-                            <span><i>March 2019</i></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <hr noshade />
-            <div>
-                <p class="section-header">Skills</p>
+<head>
+    <title>Sam Wolfson Resume</title>
+    <link rel="stylesheet" href="resume.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-horizontal">
+            <p class="title">Sam Wolfson</p>
+            <div style="position: absolute; right: 16px">
                 <ul class="unstyled-list">
-                    <li>
-                        <b>Languages</b>: Python, JavaScript/TypeScript,
-                        HTML/CSS, C, Golang, Terraform (AWS), Unix Shell
+                    <li style="float: right">
+                        <a href="mailto:me@samwolfson.com">{me@}</a><a href="https://samwolfson.com">samwolfson.com</a>
                     </li>
-                    <li><b>Frameworks</b>: Flask, FastAPI, React</li>
                     <li>
-                        <b>Environments</b>: Docker, Git, Kubernetes (Istio,
-                        Helm), SQL (PostgreSQL)
-                    </li>
-                    <li><b>Platforms</b>: AWS, GitLab CI/CD</li>
-                    <li>
-                        <b>Grab Bag</b>: University teaching & course
-                        development, homebrew IoT, 3D design & printing
+                        <a href="https://github.com/terabyte128">github.com/terabyte128</a>
                     </li>
                 </ul>
-            </div>
-            <hr noshade />
-            <div>
-                <p class="section-header">Work Experience</p>
-                <p class="mini-header flex-horizontal">
-                    <span> Software Engineer, ExtraHop Networks </span>
-                    <span><i>2020 &mdash; present</i></span>
-                </p>
-                <ul>
-                    <li>
-                        Developed and supported Reveal(x) 360, our cloud service
-                        offering.
-                    </li>
-                    <li>
-                        Worked throughout the entire software development
-                        lifecycle, including secure system design, development,
-                        deployment, and production support.
-                    </li>
-                    <li>
-                        Managed a Kubernetes cluster with the Istio service
-                        mesh.
-                    </li>
-                    <li>
-                        Wrote Terraform infrastructure-as-code to provision
-                        resources programmatically.
-                    </li>
-                    <li>
-                        Developed full-stack, widely-used internal tools for
-                        tenant management.
-                    </li>
-                </ul>
-                <p class="mini-header flex-horizontal">
-                    <span>Quarterly Instructor, University of Washington</span>
-                    <span><i>intermittently</i></span>
-                </p>
-                <ul>
-                    <li>
-                        Prepared and delivered three lectures a week for
-                        quarter-long courses (The Hardware/Software Interface,
-                        Computer Science Principles).
-                    </li>
-                    <li>
-                        Managed staff of ten TAs and classes of up to 150
-                        students.
-                    </li>
-                    <li>
-                        Led weekly meetings to discuss goals & student
-                        experiences, manage grading load, and plan for the week.
-                    </li>
-                    <li>
-                        Developed new grading infrastructure for programming
-                        assignments using Docker images on the Gradescope
-                        platform.
-                    </li>
-                    <li>
-                        Worked with a graduate student to incorporate
-                        socio-technical content into courses with the goal of
-                        understanding the broader context around computer
-                        science and technology.
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p class="mini-header flex-horizontal">
-                    <span>Software Engineering Intern, Arista Networks</span>
-                    <span><i>summer 2018</i></span>
-                </p>
-                <ul>
-                    <li>
-                        Implemented code to automatically power off servers in
-                        our test environment when they are not actively in use,
-                        leading to a 9% decrease in overall energy usage by test
-                        servers.
-                    </li>
-                    <li>
-                        Designed a strategy to move management code for test
-                        servers out of local user workspaces and into
-                        containerized microservices, using Docker to run the
-                        services and gRPC to facilitate communication between
-                        the clients and the services.
-                    </li>
-                </ul>
-            </div>
-            <hr noshade />
-            <div>
-                <p class="section-header">Projects & Volunteering</p>
-                <div>
-                    <p class="mini-header flex-horizontal">
-                        <span>
-                            Non-Profit Board Member, Capitol Hill Tool Library
-                        </span>
-                        <span><i>2023 &mdash; present</i></span>
-                    </p>
-                    <ul>
-                        <li>
-                            Led semi-weekly volunteering shifts as a tool
-                            librarian, checking in and out tools and providing
-                            project advice.
-                        </li>
-                        <li>
-                            Implemented a new wiki to document volunteer
-                            guidelines and tool usage directions.
-                        </li>
-                        <li>
-                            Led an effort to research and purchase a new 3D
-                            printer, and taught classes demonstrating its usage.
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="mini-header flex-horizontal">
-                        <span>Homebrew IoT</span>
-                    </p>
-                    <ul>
-                        <li>
-                            Built embedded devices with ESP microprocessors,
-                            Home Assistant, and ESPHome to monitor temperature,
-                            and control lights and media center devices.
-                        </li>
-                        <li>
-                            Modelled and 3D printed gizmos to fix household
-                            annoyances.
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
-    </body>
+        <div>
+            <p class="section-header">Education</p>
+            <p class="mini-header">
+                University of Washington (Seattle, WA)
+            </p>
+            <ul>
+                <li>
+                    <div class="flex-horizontal">
+                        <span>Masters of Science, Computer Science (3.9
+                            GPA)</span>
+                        <span><i>August 2020</i></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-horizontal">
+                        <span>Bachelors of Science, Computer Science (Manga
+                            Cum Laude, 3.9 GPA)</span>
+                        <span><i>March 2019</i></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <hr noshade />
+        <div>
+            <p class="section-header">Skills</p>
+            <ul class="unstyled-list">
+                <li>
+                    <b>Languages</b>: Python, JavaScript/TypeScript,
+                    HTML/CSS, C, Golang, Terraform (AWS), Unix Shell, Swift (SwiftUI)
+                </li>
+                <li><b>Frameworks</b>: Flask, FastAPI, React</li>
+                <li>
+                    <b>Environments</b>: Docker, Git, Kubernetes (Istio,
+                    Helm), SQL (PostgreSQL)
+                </li>
+                <li><b>Platforms</b>: AWS, GitLab CI/CD</li>
+                <li>
+                    <b>Grab Bag</b>: University teaching & course
+                    development, homebrew IoT, 3D design & printing
+                </li>
+            </ul>
+        </div>
+        <hr noshade />
+        <div>
+            <p class="section-header">Work Experience</p>
+            <p class="mini-header flex-horizontal">
+                <span> Software Engineer, ExtraHop Networks </span>
+                <span><i>2020 &mdash; present</i></span>
+            </p>
+            <ul>
+                <li>
+                    Developed and supported software for hundreds of enterprise
+                    customers on RevealX 360, our cloud service offering.
+                </li>
+                <li>
+                    Worked throughout the entire software development
+                    lifecycle, including secure system design, development,
+                    deployment, and production support.
+                </li>
+                <li>
+                    Managed a Kubernetes cluster with the Istio service
+                    mesh.
+                </li>
+                <li>
+                    Worked extensively with AWS services to develop secure, resilient systems.
+                </li>
+                <li>
+                    Wrote Terraform infrastructure-as-code to provision
+                    resources programmatically.
+                </li>
+                <li>
+                    Developed full-stack, widely-used internal tools.
+                </li>
+            </ul>
+            <p class="mini-header flex-horizontal">
+                <span>Quarterly Instructor, University of Washington</span>
+                <span><i>2019 &mdash; 2023</i></span>
+            </p>
+            <ul>
+                <li>
+                    Prepared and delivered three lectures a week for
+                    quarter-long courses (The Hardware/Software Interface,
+                    Computer Science Principles).
+                </li>
+                <li>
+                    Managed staff of ten TAs and classes of up to 150
+                    students.
+                </li>
+                <li>
+                    Led weekly meetings to discuss goals & student
+                    experiences, manage grading load, and plan for the week.
+                </li>
+                <li>
+                    Developed new grading infrastructure for programming
+                    assignments using Docker images on the Gradescope
+                    platform.
+                </li>
+                <li>
+                    Worked with a graduate student to incorporate
+                    socio-technical content into courses with the goal of
+                    understanding the broader context around computer
+                    science and technology.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="mini-header flex-horizontal">
+                <span>Software Engineering Intern, Arista Networks</span>
+                <span><i>summer 2018</i></span>
+            </p>
+            <ul>
+                <li>
+                    Implemented code to automatically power off servers in
+                    our test environment when they are not actively in use,
+                    leading to a 9% decrease in overall energy usage by test
+                    servers.
+                </li>
+                <li>
+                    Designed a strategy to move management code for test
+                    servers out of local user workspaces and into
+                    containerized microservices, using Docker to run the
+                    services and gRPC to facilitate communication between
+                    the clients and the services.
+                </li>
+            </ul>
+        </div>
+        <hr noshade />
+        <div>
+            <p class="section-header">Projects & Volunteering</p>
+            <div>
+                <p class="mini-header flex-horizontal">
+                    <span>
+                        Non-Profit Board Member, Capitol Hill Tool Library
+                    </span>
+                    <span><i>2023 &mdash; present</i></span>
+                </p>
+                <ul>
+                    <li>
+                        Led semi-weekly volunteering shifts as a tool
+                        librarian, checking in and out tools and providing
+                        project advice.
+                    </li>
+                    <li>
+                        Implemented a new wiki to document volunteer
+                        guidelines and tool usage directions.
+                    </li>
+                    <li>
+                        Coordinated the installation of a new front sign, including permitting, installation, and
+                        electrical work.
+                    </li>
+                    <li>
+                        Led an effort to research and purchase a new 3D
+                        printer, and taught classes demonstrating its usage.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p class="mini-header flex-horizontal">
+                <span>Homebrew IoT</span>
+            </p>
+            <ul>
+                <li>
+                    Built embedded devices with ESP microprocessors,
+                    Home Assistant, and ESPHome to monitor temperature,
+                    and control lights and media center devices.
+                </li>
+                <li>
+                    Modelled and 3D printed gizmos to fix household
+                    annoyances.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>

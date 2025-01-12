@@ -36,7 +36,6 @@ const Home: FC = () => {
                     <Link to="/projects">projects</Link>, and what I like to do{' '}
                     <Link to="/hobbies">in my spare time</Link>.
                 </p>
-                <p>I also teach computer science at UW part-time.</p>
                 <p>
                     You may also view my{' '}
                     <ExternalLink href="/resume.html">resume</ExternalLink>, if
