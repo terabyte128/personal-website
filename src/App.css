@@ -136,6 +136,17 @@ div.main-content {
     display: flex;
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: baseline;
+}
+
 @media only screen and (max-width: 800px) {
     .flex-container-wrapping {
         flex-wrap: wrap;
@@ -145,16 +156,46 @@ div.main-content {
         margin-left: auto;
         margin-right: auto;
     }
-}
 
-.flex-text-left {
-    margin: 0;
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Modify header positioning */
+    .top-nav {
+        position: relative; /* Create positioning context */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute; /* Position absolutely within header */
+        top: 110%; /* Place right below header */
+        left: 0;
+        right: 0;
+        background: #e7e7e7; /* Add background to cover content */
+        z-index: 100; /* Place above other content */
+        box-shadow: 1px 1px 5px 5px lightgray; /* Optional: adds depth */
+        padding: 10px 16px; /* Match container padding */
+        flex-direction: column;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 800px) {
     .flex-photo-right {
         margin-left: 12px;
     }
+
+    .top-link {
+        padding: 0 4px;
+    }
+}
+
+.flex-text-left {
+    margin: 0;
 }
 
 ul.spaced > li:not(:last-child) {

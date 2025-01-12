@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode, useState } from 'react';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Academics from './pages/Academics';
 import './App.css';
@@ -9,6 +9,7 @@ import Hobbies from './pages/Hobbies';
 import Random from './pages/Random';
 import { Bread } from './pages/Bread';
 import { Privacy } from './pages/Privacy';
+import { Recipes } from './pages/recipes';
 
 interface Page {
     title: string;
@@ -37,6 +38,12 @@ const pages: readonly Page[] = [
         title: 'sourdough',
         href: '/sourdough',
         content: <Bread />,
+        visible: false,
+    },
+    {
+        title: 'recipes',
+        href: '/recipes',
+        content: <Recipes />,
     },
     {
         title: 'etc',
@@ -57,28 +64,49 @@ const pages: readonly Page[] = [
 ] as const;
 
 function App() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <Router>
             <div className="bordered-gradient">
                 <div className="container">
                     <header
                         className="flex-container-wrapping flex-space-between top-nav"
-                        style={{ alignItems: 'baseline' }}
+                        style={{
+                            alignItems: 'baseline',
+                        }}
                     >
                         <Link to="/" className="clickable top-link">
                             <h1>Sam Wolfson</h1>
                         </Link>
-                        {pages
-                            .filter(p => (p.visible === false ? false : true))
-                            .map(({ title, href }) => (
-                                <Link
-                                    to={href}
-                                    className="clickable top-link top-link-small"
-                                    key={title}
-                                >
-                                    <h2>{title}</h2>
-                                </Link>
-                            ))}
+                        <div
+                            className="hamburger-menu"
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        >
+                            <i
+                                className={
+                                    isMenuOpen ? 'arrow up' : 'arrow down'
+                                }
+                            />
+                        </div>
+                        <div
+                            className={`nav-links ${isMenuOpen ? 'open' : ''}`}
+                        >
+                            {pages
+                                .filter(p =>
+                                    p.visible === false ? false : true,
+                                )
+                                .map(({ title, href }) => (
+                                    <Link
+                                        to={href}
+                                        className="clickable top-link top-link-small"
+                                        key={title}
+                                        onClick={() => setIsMenuOpen(false)} // Close menu on click
+                                    >
+                                        <h2>{title}</h2>
+                                    </Link>
+                                ))}
+                        </div>
                     </header>
                 </div>
             </div>
