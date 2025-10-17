@@ -25,6 +25,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.5",
     "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.0",
     "tailwindcss": "^4",

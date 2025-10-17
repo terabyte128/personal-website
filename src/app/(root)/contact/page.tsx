@@ -1,14 +1,14 @@
-import { ExternalLink } from "@/helpers/ExternalLink";
-import { TitleWithIcon } from "@/helpers/TitleWithIcon";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconMail,
   IconMailbox,
   IconMapPin,
-  IconPin,
 } from "@tabler/icons-react";
 import { Metadata } from "next";
+
+import { ExternalLink } from "@/helpers/ExternalLink";
+import { TitleWithIcon } from "@/helpers/TitleWithIcon";
 
 export const metadata: Metadata = {
   title: "Contact | Sam Wolfson",

@@ -1,8 +1,9 @@
+import { Metadata } from "next";
+import Image from "next/image";
+
 import CollapsingSection from "@/helpers/CollapsingSection";
 import { ExternalLink } from "@/helpers/ExternalLink";
 import { Message } from "@/helpers/Message";
-import Image from "next/image";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sourdough | Sam Wolfson",

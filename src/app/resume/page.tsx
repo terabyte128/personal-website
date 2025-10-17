@@ -1,6 +1,7 @@
 "use client";
-import { IconDownload } from "@tabler/icons-react";
 import "./resume.css";
+
+import { IconDownload } from "@tabler/icons-react";
 
 export default function Resume() {
   return (

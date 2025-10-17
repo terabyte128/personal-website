@@ -1,9 +1,10 @@
+import { IconBlocks } from "@tabler/icons-react";
+import { Metadata } from "next";
+
 import CollapsingSection from "@/helpers/CollapsingSection";
 import { ExternalLink } from "@/helpers/ExternalLink";
 import { Message } from "@/helpers/Message";
 import { TitleWithIcon } from "@/helpers/TitleWithIcon";
-import { IconBlocks } from "@tabler/icons-react";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Projects | Sam Wolfson",

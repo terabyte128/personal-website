@@ -1,7 +1,8 @@
-import { ExternalLink } from "@/helpers/ExternalLink";
-import { TitleWithIcon } from "@/helpers/TitleWithIcon";
 import { IconArrowsRandom } from "@tabler/icons-react";
 import { Metadata } from "next";
+
+import { ExternalLink } from "@/helpers/ExternalLink";
+import { TitleWithIcon } from "@/helpers/TitleWithIcon";
 
 export const metadata: Metadata = {
   title: "Etc | Sam Wolfson",

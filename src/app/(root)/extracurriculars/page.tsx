@@ -1,8 +1,9 @@
-import CollapsingSection from "@/helpers/CollapsingSection";
-import { ExternalLink } from "@/helpers/ExternalLink";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
+
+import CollapsingSection from "@/helpers/CollapsingSection";
+import { ExternalLink } from "@/helpers/ExternalLink";
 
 export const metadata: Metadata = {
   title: "Extracurriculars | Sam Wolfson",

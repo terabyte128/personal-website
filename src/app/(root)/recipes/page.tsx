@@ -1,11 +1,12 @@
+import { IconBaguette } from "@tabler/icons-react";
+import { Metadata } from "next";
+import Link from "next/link";
+import { ReactNode } from "react";
+
 import CollapsingSection from "@/helpers/CollapsingSection";
 import { ExternalLink } from "@/helpers/ExternalLink";
 import { Message } from "@/helpers/Message";
 import { TitleWithIcon } from "@/helpers/TitleWithIcon";
-import { IconBaguette } from "@tabler/icons-react";
-import Link from "next/link";
-import { ReactNode } from "react";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Recipes | Sam Wolfson",

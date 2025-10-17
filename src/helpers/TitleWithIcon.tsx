@@ -1,5 +1,4 @@
 import { Icon } from "@tabler/icons-react";
-import { ReactNode } from "react";
 
 type TitleWithIconProps = {
   title: string;

@@ -1,6 +1,8 @@
-import { ExternalLink } from "@/helpers/ExternalLink";
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+
+import { ExternalLink } from "@/helpers/ExternalLink";
 
 export const metadata: Metadata = {
   title: "Sam Wolfson",
@@ -56,7 +58,13 @@ export default function Home() {
           , if you&apos;re into that sort of thing.
         </p>
       </div>
-      <img className="col-span-2 rounded-md" src="/sam.jpg" alt="Sam photo" />
+      <Image
+        width={1504}
+        height={2016}
+        className="col-span-2 rounded-md"
+        src="/sam.jpg"
+        alt="Sam photo"
+      />
     </div>
   );
 }
