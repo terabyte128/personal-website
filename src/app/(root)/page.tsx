@@ -15,9 +15,9 @@ export default function Home() {
         <h1>Hello!</h1>
         <p>My name is Sam, welcome to my website.</p>
         <p>
-          On this site, you may find interesting things about me, an overview of
-          my <Link href="/academics">academic work</Link>, my various{" "}
-          <Link href="/projects">projects</Link>, and what I like to do{" "}
+          On this site, you may find interesting things about me, including an
+          overview of my <Link href="/academics">academic work</Link>, food that
+          I&apos;ve <Link href="/recipes">baked</Link>, and what I like to do{" "}
           <Link href="/extracurriculars">in my spare time</Link>.
         </p>
         <p>
