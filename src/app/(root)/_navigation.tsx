@@ -10,7 +10,6 @@ const links: {
   path: string;
 }[] = [
   { path: "academics" },
-  { path: "projects" },
   { path: "extracurriculars" },
   { path: "recipes" },
   { path: "etc" },

@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 import CollapsingSection from "@/helpers/CollapsingSection";
 import { ExternalLink } from "@/helpers/ExternalLink";
-import { Message } from "@/helpers/Message";
+import { SuccessMessage, WarningMessage } from "@/helpers/Message";
 import { TitleWithIcon } from "@/helpers/TitleWithIcon";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ interface RecipeProps {
 const Recipe = (props: RecipeProps) => {
   return (
     <CollapsingSection title={props.title}>
-      {props.message && <Message>{props.message}</Message>}
+      {props.message && <WarningMessage>{props.message}</WarningMessage>}
       <h3>Ingredients</h3>
       <ul className="mb-2 list-disc pl-4 [&>*]:py-1">
         {props.ingredients.map((ingredient) => (
@@ -39,6 +39,10 @@ export default function Recipes() {
   return (
     <div>
       <TitleWithIcon title="Recipes" icon={IconBaguette} />
+      <SuccessMessage>
+        If I gave you some dough, see{" "}
+        <Link href="/sourdough?party">this page!</Link>
+      </SuccessMessage>
       <p>
         This page is mostly a collection of baking recipe notes for my own use.
         There are tons of recipes floating around for the types of

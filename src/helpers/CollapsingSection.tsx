@@ -4,10 +4,13 @@ import { ReactNode, useState } from "react";
 interface CollapsingSectionProps {
   title: string;
   children: ReactNode;
+  initiallyCollapsed?: boolean;
 }
 
 export default function CollapsingSection(props: CollapsingSectionProps) {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(
+    props.initiallyCollapsed ?? true,
+  );
 
   return (
     <div className="my-4 border-b-2 border-b-indigo-300 pb-2">

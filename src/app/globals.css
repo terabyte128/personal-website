@@ -26,6 +26,13 @@
     background-position:
       0 0,
       9px 9px;
+    background-color: var(--color-stone-200);
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    scroll-margin-top: calc(var(--spacing) * 18);
   }
 
   .main-body a {
