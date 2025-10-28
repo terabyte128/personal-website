@@ -10,8 +10,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-5 gap-8">
-      <div className="col-span-3">
+    <div className="">
+      <Image
+        priority
+        width={400}
+        height={536}
+        className="float-right mb-4 ml-4 w-48 rounded-md sm:w-60 md:w-72"
+        src="/sam.jpg"
+        alt="Sam photo"
+      />
+      <div>
         <h1>Hello!</h1>
         <p>My name is Sam, welcome to my website.</p>
         <p>
@@ -39,14 +47,6 @@ export default function Home() {
           , if you&apos;re into that sort of thing.
         </p>
       </div>
-      <Image
-        priority
-        width={400}
-        height={536}
-        className="col-span-2 rounded-md"
-        src="/sam.jpg"
-        alt="Sam photo"
-      />
     </div>
   );
 }

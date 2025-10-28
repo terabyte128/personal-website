@@ -27,7 +27,7 @@ export function Navigation() {
         <title>{cleanedPath}</title>
       </Head>
       <div className="fixed top-0 right-0 left-0 z-10 bg-linear-to-b from-violet-900 to-violet-800 text-stone-200 shadow-lg text-shadow-lg">
-        <div className="mx-auto max-w-4xl px-4 py-2 md:px-0">
+        <div className="mx-auto px-4 py-2 lg:max-w-4xl lg:px-0">
           <div className="flex h-12 flex-row items-center justify-between">
             <Link href="/" className="text-xl font-bold">
               Sam Wolfson

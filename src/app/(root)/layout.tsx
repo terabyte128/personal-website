@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <div>
       <Navigation />
-      <div className="main-body mx-auto mt-20 mb-12 max-w-4xl px-4 md:px-0">
+      <div className="main-body mx-auto mt-20 mb-12 px-4 lg:max-w-4xl lg:px-0">
         <Suspense>{children}</Suspense>
       </div>
     </div>
