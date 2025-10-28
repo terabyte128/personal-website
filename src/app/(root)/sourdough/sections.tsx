@@ -55,11 +55,11 @@ export const Sections = () => {
           I&apos;ve listed them below in order of how useful I think they are.
           Links are <b>not endorsements</b>, just examples.
         </p>
-        <ul className="spaced">
+        <ul className="list-disc pl-4 [&>li]:py-1">
           <li>
             <b>
               <ExternalLink href="https://www.seriouseats.com/best-bench-scrapers-6341995">
-                bench scraper
+                Bench scraper
               </ExternalLink>
             </b>
             : extremely helpful and good bang for the buck. Use it to scrape
@@ -71,7 +71,7 @@ export const Sections = () => {
           <li>
             <b>
               <ExternalLink href="https://www.nytimes.com/wirecutter/reviews/best-kitchen-scale/">
-                digital scale
+                Digital scale
               </ExternalLink>
             </b>
             : instead of needing a measuring cup for everything, you can just
@@ -82,7 +82,7 @@ export const Sections = () => {
           <li>
             <b>
               <ExternalLink href="https://www.lodgecastiron.com/product/chef-collection-6-quart-double-dutch-oven?sku=LC6DD">
-                dutch oven with oven safe lid
+                Dutch oven with oven safe lid
               </ExternalLink>
             </b>
             : for the first stage of your bread bake, you want a really humid
@@ -102,7 +102,7 @@ export const Sections = () => {
           <li>
             <b>
               <ExternalLink href="https://www.kingarthurbaking.com/blog/2023/01/25/bannetons-brotforms-proofing-baskets">
-                proofing baskets (or &ldquo;bannetons&rdquo;)
+                Proofing baskets (or &ldquo;bannetons&rdquo;)
               </ExternalLink>
             </b>
             : these are those stereotypical baskets that you see bread dough
@@ -142,7 +142,7 @@ export const Sections = () => {
           ambient temperature) so it can begin to ferment. In a medium bowl,
           combine:
         </p>
-        <ul>
+        <ul className="list-disc pl-4 [&>li]:py-1">
           <li>a couple tablespoons of starter</li>
           <li>130g flour</li>
           <li>130g water</li>
@@ -175,7 +175,7 @@ export const Sections = () => {
           In a large mixing bowl (like, the biggest one you own, unless you have
           some ridiculous industrial-kitchen sized bowl), combine:
         </p>
-        <ul>
+        <ul className="list-disc pl-4 [&>li]:py-1">
           <li>all your levain from the night before</li>
           <li>600g of water</li>
           <li>20g of salt</li>
@@ -205,7 +205,7 @@ export const Sections = () => {
           sticking to itself than to your hands.
         </p>
         <h4>Tips for kneading</h4>
-        <ul>
+        <ul className="list-disc pl-4 [&>li]:py-1">
           <li>
             move quickly and deliberately, to give the dough less of a chance to
             stick to your hands
@@ -315,7 +315,7 @@ export const Sections = () => {
         </p>
       </CollapsingSection>
       <CollapsingSection title="Tips & words of encouragement">
-        <ul className="spaced">
+        <ul className="list-disc pl-4 [&>li]:py-1">
           <li>
             It might not work perfectly the first time. Sourdough is as much an
             art as it is a science, and since you&apos;re dealing with wild
