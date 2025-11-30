@@ -65,7 +65,7 @@ export const BreadRecipe = () => {
             <span>For a total dough weight of</span>
             <input
               name="totalWeight"
-              className="mx-2 w-[4em] rounded-md border px-2"
+              className="mx-2 w-[4em] rounded-md border px-2 text-center"
               value={totalWeight}
               type="number"
               onChange={(e) => {
