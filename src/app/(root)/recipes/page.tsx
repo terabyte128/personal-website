@@ -1,38 +1,15 @@
 import { IconBaguette } from "@tabler/icons-react";
 import { Metadata } from "next";
 import Link from "next/link";
-import { ReactNode } from "react";
 
-import CollapsingSection from "@/helpers/CollapsingSection";
 import { ExternalLink } from "@/helpers/ExternalLink";
-import { SuccessMessage, WarningMessage } from "@/helpers/Message";
+import { SuccessMessage } from "@/helpers/Message";
 import { TitleWithIcon } from "@/helpers/TitleWithIcon";
+
+import { BreadRecipe, Recipe } from "./recipe";
 
 export const metadata: Metadata = {
   title: "Recipes | Sam Wolfson",
-};
-
-interface RecipeProps {
-  title: string;
-  message?: ReactNode;
-  notes: ReactNode;
-  ingredients: ReactNode[];
-}
-
-const Recipe = (props: RecipeProps) => {
-  return (
-    <CollapsingSection title={props.title}>
-      {props.message && <WarningMessage>{props.message}</WarningMessage>}
-      <h3>Ingredients</h3>
-      <ul className="mb-2 list-disc pl-4 [&>*]:py-1">
-        {props.ingredients.map((ingredient) => (
-          <li key={ingredient?.toString()}>{ingredient}</li>
-        ))}
-      </ul>
-      <h3>Notes</h3>
-      {props.notes}
-    </CollapsingSection>
-  );
 };
 
 export default function Recipes() {
@@ -49,31 +26,7 @@ export default function Recipes() {
         bread-adjacent food I like to bake, but I always need to remember what
         adjustments I want. So here are the cliff notes:
       </p>
-      <Recipe
-        title="Sourdough bread"
-        message={
-          <>
-            For a more thorough overview of my sourdough baking process, see{" "}
-            <Link href="/sourdough">here</Link> instead.
-          </>
-        }
-        ingredients={[
-          "260g starter at 100% hydration (130g each)",
-          "600g water",
-          "20g salt",
-          "1000g flour",
-        ]}
-        notes={
-          <>
-            <ul className="[&>li]:py-0.5">
-              <li>Makes 2 loaves of around 930g each.</li>
-              <li>Bulk ferment 4-8 hours until about doubled in size.</li>
-              <li>Proof overnight or longer in fridge.</li>
-              <li>Inner temperature should reach 190°F.</li>
-            </ul>
-          </>
-        }
-      />
+      <BreadRecipe />
       <Recipe
         title="Sourdough pizza"
         ingredients={[

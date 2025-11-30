@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
+    <div className="dark:text-neutral-300">
       <Navigation />
       <div className="main-body mx-auto mt-20 mb-12 px-4 lg:max-w-4xl lg:px-0">
         <Suspense>{children}</Suspense>

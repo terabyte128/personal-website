@@ -11,24 +11,33 @@
 }
 
 @layer base {
-  html,
-  body {
-    background-image:
-      radial-gradient(
-        var(--color-stone-300) var(--dot-size),
-        transparent var(--dot-size)
-      ),
-      radial-gradient(
-        var(--color-stone-300) var(--dot-size),
-        var(--color-stone-200) var(--dot-size)
-      );
-    background-size: 18px 18px;
-    background-position:
-      0 0,
-      9px 9px;
-    background-color: var(--color-stone-200);
-    margin: 0;
-    padding: 0;
+  @media (prefers-color-scheme: light) {
+    html,
+    body {
+      background-image:
+        radial-gradient(
+          var(--color-stone-300) var(--dot-size),
+          transparent var(--dot-size)
+        ),
+        radial-gradient(
+          var(--color-stone-300) var(--dot-size),
+          var(--color-stone-200) var(--dot-size)
+        );
+      background-size: 18px 18px;
+      background-position:
+        0 0,
+        9px 9px;
+      background-color: var(--color-stone-200);
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html,
+    body {
+      background-color: var(--color-neutral-900);
+    }
   }
 
   * {
@@ -68,7 +77,6 @@
 }
 
 .arrow {
-  border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -100,4 +108,14 @@
 
 .clickable {
   cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-moz-number-spin-box {
+  display: none;
 }
